@@ -1,0 +1,12 @@
+<!doctype html>
+<title>Chordée Proxy</title>
+{% if cookie %}
+  {% include 'has-cookie.html' %}
+  {% include 'tests.html' %}
+{% else %}
+  {% include 'get-command.html' %}
+{% endif %}
+
+{% if result %}
+  <pre>{{result}}</pre>
+{% endif %}
